@@ -33,9 +33,198 @@
         <div class="c-container-flex th3">
           <last-updates />
         </div>
-        <div class="c-container-flex th1">
-          <div class="c-card no-padding mt-30 width-100">
-            <p>kjk</p>
+        <div class="c-container-flex th1 inline justify-content-flex-start">
+          <div class="c-card no-padding align-items-flex-start mt-30 width-100">
+            <div class="pt-15 pb-15 pl-20 pr-20 width-100">
+              <p>Top intenções de compra</p>
+              <div class="mt-30">
+                <table class="c-table">
+                  <tbody>
+                    <tr class="c-table__item">
+                      <td>
+                        <img
+                          src="@/assets/img/hyundai.jpg"
+                          alt
+                          width="36"
+                          height="36"
+                          class="mb-15"
+                        />
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15">HB20</p>
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15">197</p>
+                      </td>
+                    </tr>
+                    <tr class="c-table__item">
+                      <td>
+                        <img
+                          src="@/assets/img/chevrolet.jpg"
+                          alt
+                          width="36"
+                          height="36"
+                          class="mb-15 mt-15"
+                        />
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15 mt-15">Onix</p>
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15 mt-15">183</p>
+                      </td>
+                    </tr>
+                    <tr class="c-table__item">
+                      <td>
+                        <img
+                          src="@/assets/img/jeep.jpg"
+                          alt
+                          width="36"
+                          height="36"
+                          class="mb-15 mt-15"
+                        />
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15 mt-15">Renegade</p>
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15 mt-15">125</p>
+                      </td>
+                    </tr>
+                    <tr class="c-table__item">
+                      <td>
+                        <img
+                          src="@/assets/img/volks.jpg"
+                          alt
+                          width="36"
+                          height="36"
+                          class="mb-15 mt-15"
+                        />
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15 mt-15">T-Cross</p>
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15 mt-15">109</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="@/assets/img/nissan.jpg"
+                          alt
+                          width="36"
+                          height="36"
+                          class="mt-15"
+                        />
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mt-15">Kicks</p>
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mt-15">86</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="c-card no-padding align-items-flex-start mt-30 width-100">
+            <div class="pt-15 pb-15 pl-20 pr-20 width-100">
+              <p>Top intenções de compra</p>
+              <div class="mt-30">
+                <table class="c-table">
+                  <tbody>
+                    <tr class="c-table__item">
+                      <td>
+                        <img
+                          src="@/assets/img/hyundai.jpg"
+                          alt
+                          width="36"
+                          height="36"
+                          class="mb-15"
+                        />
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15">HB20</p>
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15">197</p>
+                      </td>
+                    </tr>
+                    <tr class="c-table__item">
+                      <td>
+                        <img
+                          src="@/assets/img/chevrolet.jpg"
+                          alt
+                          width="36"
+                          height="36"
+                          class="mb-15 mt-15"
+                        />
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15 mt-15">Onix</p>
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15 mt-15">183</p>
+                      </td>
+                    </tr>
+                    <tr class="c-table__item">
+                      <td>
+                        <img
+                          src="@/assets/img/jeep.jpg"
+                          alt
+                          width="36"
+                          height="36"
+                          class="mb-15 mt-15"
+                        />
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15 mt-15">Renegade</p>
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15 mt-15">125</p>
+                      </td>
+                    </tr>
+                    <tr class="c-table__item">
+                      <td>
+                        <img
+                          src="@/assets/img/volks.jpg"
+                          alt
+                          width="36"
+                          height="36"
+                          class="mb-15 mt-15"
+                        />
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15 mt-15">T-Cross</p>
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mb-15 mt-15">109</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="@/assets/img/nissan.jpg"
+                          alt
+                          width="36"
+                          height="36"
+                          class="mt-15"
+                        />
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mt-15">Kicks</p>
+                      </td>
+                      <td>
+                        <p class="o-text semi-bold mt-15">86</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>

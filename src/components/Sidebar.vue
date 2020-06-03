@@ -8,29 +8,29 @@
         <p class="o-text">Hallison Melo</p>
         <p class="o-text pointer">
           <img src="@/assets/img/ic-power-settings-new.svg" alt />
-          <span class="o-text disabled">Sair</span>
+          <span class="o-text disabled" @click="darkMode">Sair</span>
         </p>
       </div>
     </div>
     <ul class="o-list">
       <li class="active">
-        <img src="@/assets/img/ic-home.svg" alt="" class="o-img" />
+        <img src="@/assets/img/ic-home.svg" alt class="o-img" />
         <p class="o-text text">Início</p>
       </li>
       <li>
-        <img src="@/assets/img/ic-person.svg" alt="" class="o-img" />
+        <img src="@/assets/img/ic-person.svg" alt class="o-img" />
         <p class="o-text text">Clientes</p>
       </li>
       <li>
-        <img src="@/assets/img/ic-directions-car.svg" alt="" class="o-img" />
+        <img src="@/assets/img/ic-directions-car.svg" alt class="o-img" />
         <p class="o-text text">Veículos</p>
       </li>
       <li>
-        <img src="@/assets/img/ic-vector-triangle.svg" alt="" class="o-img" />
+        <img src="@/assets/img/ic-vector-triangle.svg" alt class="o-img" />
         <p class="o-text text">Triangulação</p>
       </li>
       <li class="disabled">
-        <img src="@/assets/img/ic-account-balance-wallet.svg" alt="" class="o-img" />
+        <img src="@/assets/img/ic-account-balance-wallet.svg" alt class="o-img" />
         <p class="o-text text">Financeiro</p>
       </li>
     </ul>
@@ -42,6 +42,9 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String
+  },
+  methods: {
+    darkMode() {}
   }
 };
 </script>

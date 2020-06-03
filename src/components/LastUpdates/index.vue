@@ -1,5 +1,5 @@
 <template>
-  <div class="c-card no-padding mt-30 width-100">
+  <div class="c-card no-padding mt-30 width-100 align-items-flex-start">
     <div class="c-container-flex inline flex-grow">
       <div class="pt-15 pb-15 pl-20 pr-20 c-container-flex justify-content-space-between">
         <p class="o-text semi-bold">Últimas avaliações</p>
