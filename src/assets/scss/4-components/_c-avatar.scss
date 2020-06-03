@@ -1,0 +1,26 @@
+.c-cirle-center {
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-avatar {
+    @extend .c-cirle-center;
+    margin: 0 rem(15);
+    width: rem(50);
+    height: rem(50);
+    border: solid 2px $bright-blue;
+    .c-avatar__img {
+        width: rem(50);
+        height: rem(50);
+        border-radius: rem(50);
+    }
+}
+
+.c-avatar-circle {
+    @extend .c-cirle-center;
+    width: rem(64);
+    height: rem(64);
+    background-color: $ice-blue;
+}

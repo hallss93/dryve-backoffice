@@ -1,0 +1,9 @@
+.c-card {
+    align-items: center;
+    display: flex;
+    //min-height: rem(110);
+    border-radius: rem(4);
+    border: solid 1px $black-12;
+    background-color: $white-two;
+    padding: rem(15) rem(20);
+}

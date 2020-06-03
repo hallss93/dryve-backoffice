@@ -2,11 +2,19 @@
 @import "0-settings/s-colors";
 
 /* Tools */
+@import "1-tools/t-rem";
+@import "1-tools/t-spacing";
 
 /* Base */
 @import "2-base/b-default";
 
 /* Objects */
+@import "3-objects/o-img";
+@import "3-objects/o-list";
+@import "3-objects/o-text";
 
 /* Components */
+@import "4-components/c-avatar";
+@import "4-components/c-card";
+@import "4-components/c-container";
 @import "4-components/c-sidebar";

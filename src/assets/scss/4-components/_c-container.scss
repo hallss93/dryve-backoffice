@@ -1,0 +1,43 @@
+.c-container {
+    &.body {
+        margin: rem(100) rem(55) rem(55) rem(110);
+    }
+}
+
+.c-container-flex {
+    display: flex;
+
+    &.inline {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &.align-items-center {
+        align-items: center;
+    }
+
+    &.justify-content-space-between {
+        justify-content: space-between;
+    }
+
+    &.large {
+        width: 80%;
+    }
+
+    &.half {
+        width: 50%;
+    }
+
+    &.medium-with-space {
+        width: 28%;
+    }
+
+    &.medium {
+        width: 33.33%;
+    }
+
+    &.small {
+        width: 20%;
+    }
+}
