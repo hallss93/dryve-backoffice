@@ -1,0 +1,12 @@
+.c-navbar {
+    position: fixed;
+    top: rem(-70);
+    width: 100%;
+    left: 0;
+    padding-left: rem(80);
+    height: rem(70);
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease;
+}

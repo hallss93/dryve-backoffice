@@ -8,7 +8,7 @@
       <p class="o-text title mt-20 bold">
         <img v-if="up" src="@/assets/img/ic-arrow-drop-up.svg" alt />
         <img v-else src="@/assets/img/ic-arrow-drop-down.svg" alt />
-        <span class="o-text small mr-5 bold" v-bind:class="{violet:up, red:!up}">36%</span> desde ontem
+        <span class="o-text small mr-5 bold" v-bind:class="{violet:up, red:!up}">{{percentage}}%</span> desde ontem
       </p>
     </div>
     <div>

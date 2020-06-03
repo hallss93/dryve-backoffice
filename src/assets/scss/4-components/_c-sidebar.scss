@@ -1,13 +1,13 @@
 .c-sidebar {
     z-index: 4;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+    left: rem(-80);
     width: 80px;
     height: 100%;
     box-shadow: 1px 0 0 0 $white;
     background-color: #ffffff;
-    transition: all 0.2s;
+    transition: all 0.3s;
 
     &:hover {
         width: 240px;

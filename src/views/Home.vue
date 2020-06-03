@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Sidebar msg="Welcome to Your Vue.js App" />
+    <Navbar />
     <div class="c-container body">
       <div class="c-container-flex justify-content-space-between">
         <simple-card
@@ -47,6 +48,7 @@
 import Sidebar from "@/components/Sidebar.vue";
 import SimpleCard from "@/components/Cards/SimpleCard.vue";
 import LastUpdates from "@/components/LastUpdates/index.vue";
+import Navbar from "@/components/Navbar/index.vue";
 
 export default {
   name: "Home",
@@ -64,7 +66,19 @@ export default {
   components: {
     Sidebar,
     SimpleCard,
-    LastUpdates
+    LastUpdates,
+    Navbar
+  },
+  created() {
+    setTimeout(() => {
+      document.querySelector(".c-navbar").style.top = "0";
+      setTimeout(() => {
+        document.querySelector(".c-sidebar").style.left = "0";
+        document
+          .querySelector("#app > div > div.c-container.body")
+          .classList.add("expand");
+      }, 1000);
+    }, 200);
   }
 };
 </script>
