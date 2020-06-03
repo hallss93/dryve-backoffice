@@ -1,4 +1,11 @@
 .o-img {
     max-width: rem(30);
     max-height: rem(30);
+
+    &.classic{
+        max-width: rem(80);
+        max-height: rem(60);
+        border-radius: rem(4);
+        border: solid 1px $white;
+    }
 }

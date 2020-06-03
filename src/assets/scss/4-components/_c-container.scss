@@ -7,16 +7,18 @@
 .c-container-flex {
     display: flex;
 
-
-    &.flex-grow{
+    &.flex-grow {
         flex-grow: 1;
     }
-    
 
     &.inline {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    &.justify-content-flex-end {
+        justify-content: flex-end;
     }
 
     &.align-items-center {
@@ -27,12 +29,24 @@
         justify-content: space-between;
     }
 
+    &.justify-content-center {
+        justify-content: center;
+    }
+
     &.large {
         width: 80%;
     }
 
     &.half {
         width: 50%;
+    }
+
+    &.th3 {
+        width: 66%;
+    }
+
+    &.th1 {
+        width: 32%;
     }
 
     &.medium-with-space {

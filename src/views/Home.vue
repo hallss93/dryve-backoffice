@@ -28,8 +28,16 @@
           timeString="este mês"
         />
       </div>
-
-      <last-updates/>
+      <div class="c-container-flex justify-content-space-between">
+        <div class="c-container-flex th3">
+          <last-updates />
+        </div>
+        <div class="c-container-flex th1">
+          <div class="c-card no-padding mt-30 width-100">
+            <p>kjk</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

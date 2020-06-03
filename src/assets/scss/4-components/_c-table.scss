@@ -1,0 +1,12 @@
+.c-table {
+    width: 100%;
+    border-spacing: 0;
+    tbody {
+        .c-table__item {
+            th,
+            td {
+                border-bottom: 1px solid $black-12;
+            }
+        }
+    }
+}
