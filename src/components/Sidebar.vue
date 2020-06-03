@@ -1,20 +1,25 @@
 <template>
   <div class="c-sidebar">
     <ul>
-      <li>
+      <li class="active">
         <img src="@/assets/img/ic-home.svg" alt />
+        <p class="text">Início</p>
       </li>
       <li>
         <img src="@/assets/img/ic-person.svg" alt />
+        <p class="text">Clientes</p>
       </li>
       <li>
         <img src="@/assets/img/ic-directions-car.svg" alt />
+        <p class="text">Veículos</p>
       </li>
       <li>
         <img src="@/assets/img/ic-vector-triangle.svg" alt />
+        <p class="text">Triangulação</p>
       </li>
-      <li>
+      <li class="disabled">
         <img src="@/assets/img/ic-account-balance-wallet.svg" alt />
+        <p class="text">Financeiro</p>
       </li>
     </ul>
   </div>
