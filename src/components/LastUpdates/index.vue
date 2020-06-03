@@ -28,29 +28,31 @@
                 </p>
               </td>
             </tr>
-            <tr v-for="(item, index) in 10" :key="index" class="c-table__item">
+            <tr v-for="(item, index) in listCars" :key="index" class="c-table__item">
               <td class="p-20">
                 <div class="c-container-flex">
-                  <img
-                    src="@/assets/img/profile.jpeg"
-                    width="80"
-                    height="60"
-                    alt
-                    class="o-img classic"
-                  />
+                  <img :src="item.image" width="80" height="60" alt class="o-img classic" />
                   <div class="ml-10">
-                    <p class="o-text bold uppercase dark_blue_grey small">Jeep Compass</p>
+                    <p class="o-text bold uppercase dark_blue_grey small">{{item.name}}</p>
                     <p class="o-text uppercase steel smaller">GDL8019</p>
-                    <p class="o-text uppercase steel smaller">2018 - Diesel</p>
-                    <p class="o-text uppercase steel smaller">Automático - 70.972 km</p>
+                    <p
+                      class="o-text uppercase steel smaller"
+                    >{{item.model_year}} - {{item.fuel_type}}</p>
+                    <p
+                      class="o-text uppercase steel smaller"
+                    >{{item.transmission_type}} - {{formatNumber(item.mileage)}} km</p>
                   </div>
                 </div>
               </td>
               <td class="p-20">
                 <p class="o-text uppercase steel smaller">Anúncio</p>
-                <p class="o-text bold uppercase dark_blue_grey small">R$ 115.560</p>
+                <p
+                  class="o-text bold uppercase dark_blue_grey small"
+                >R$ {{formatNumber(item.ad_selling_price)}}</p>
                 <p class="o-text uppercase steel smaller">MÍNIMO ACEITO</p>
-                <p class="o-text uppercase steel smaller">R$ 115.560</p>
+                <p
+                  class="o-text uppercase steel smaller"
+                >R$ {{formatNumber(item.ad_selling_price-4500)}}</p>
               </td>
               <td class="p-20">
                 <div class="c-container-flex inline align-items-center">
@@ -75,3 +77,26 @@
     </div>
   </div>
 </template>
+<script>
+import cars from "@/api/cars";
+export default {
+  name: "LastUpdates",
+  data() {
+    return {
+      listCars: []
+    };
+  },
+  methods: {
+    async getAllCars() {
+      const { data, status } = await cars.getAllCars();
+      this.listCars = data;
+    },
+    formatNumber(num) {
+      return new Intl.NumberFormat("de-DE").format(num);
+    }
+  },
+  created() {
+    this.getAllCars();
+  }
+};
+</script>
