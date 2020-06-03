@@ -49,6 +49,10 @@
         color: $blue-violet;
     }
 
+    &.red {
+        color: $coral;
+    }
+
     &.center {
         display: inline-block;
         margin: 0 auto;
@@ -68,6 +72,10 @@
         font-weight: 500;
         line-height: 1.6;
         letter-spacing: rem(1.5);
+    }
+    
+    &.bold {
+        font-weight: bold;
     }
 
     &.uppercase {

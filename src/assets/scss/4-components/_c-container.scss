@@ -7,6 +7,12 @@
 .c-container-flex {
     display: flex;
 
+
+    &.flex-grow{
+        flex-grow: 1;
+    }
+    
+
     &.inline {
         flex-direction: column;
         flex-wrap: wrap;

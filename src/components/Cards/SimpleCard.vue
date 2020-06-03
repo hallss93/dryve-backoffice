@@ -5,9 +5,9 @@
     <div>
       <p class="o-text title uppercase">{{title}}</p>
       <p class="o-text xxl mt-20">{{value}}</p>
-      <p class="o-text title mt-20">
-        <img v-if="up" :src="'@/assets/img/ic-arrow-drop-up.svg'" alt />
-        <img v-else :src="'@/assets/img/ic-arrow-drop-down.svg'" alt />
+      <p class="o-text title mt-20 bold">
+        <img v-if="up" src="@/assets/img/ic-arrow-drop-up.svg" alt />
+        <img v-else src="@/assets/img/ic-arrow-drop-down.svg" alt />
         <span class="o-text small mr-5" v-bind:class="{violet:up, red:!up}">36%</span> desde ontem
       </p>
     </div>

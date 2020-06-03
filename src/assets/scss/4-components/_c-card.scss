@@ -6,4 +6,7 @@
     border: solid 1px $black-12;
     background-color: $white-two;
     padding: rem(15) rem(20);
+    &.no-padding {
+        padding: 0;
+    }
 }
