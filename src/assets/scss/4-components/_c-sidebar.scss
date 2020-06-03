@@ -1,0 +1,29 @@
+.c-sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    box-shadow: 1px 0 0 0 $white;
+    background-color: #ffffff;
+
+    ul {
+        background: transparent;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
