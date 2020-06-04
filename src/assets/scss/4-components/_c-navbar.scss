@@ -1,4 +1,6 @@
 .c-navbar {
+    display: flex;
+    justify-content: space-between;
     z-index: 2;
     position: fixed;
     top: rem(-70);
@@ -9,5 +11,14 @@
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
+
+    .c-navbar-controls {
+        transition: all 1s;
+        opacity: 0;
+        width: rem(200);
+        img {
+            margin-left: rem(27);
+        }
+    }
 }

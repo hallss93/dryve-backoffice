@@ -50,6 +50,9 @@ export default {
       setTimeout(() => {
         document.querySelector(".c-sidebar").style.left = "0";
         document.querySelector("div.c-container.body").classList.add("expand");
+        setTimeout(() => {
+          document.querySelector(".c-navbar-controls").style.opacity = "1";
+        }, 500);
       }, 1000);
     }, 200);
   }
