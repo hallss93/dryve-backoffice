@@ -1,9 +1,9 @@
 <template>
   <div class="home">
-    <Sidebar msg="Welcome to Your Vue.js App" />
+    <Sidebar :routeName="routeName" />
     <Navbar />
     <div class="c-container body">
-      <router-view/>
+      <router-view />
     </div>
   </div>
 </template>
@@ -16,7 +16,17 @@ import LastUpdates from "@/components/LastUpdates/index.vue";
 import Navbar from "@/components/Navbar/index.vue";
 
 export default {
+  data() {
+    return {
+      routeName: "Home"
+    };
+  },
   name: "App",
+  watch: {
+    $route(route) {
+      this.routeName = route.name;
+    }
+  },
   computed: {
     car_blue() {
       return require("@/assets/img/ic-directions-car_blue.svg");
@@ -39,9 +49,7 @@ export default {
       document.querySelector(".c-navbar").style.top = "0";
       setTimeout(() => {
         document.querySelector(".c-sidebar").style.left = "0";
-        document
-          .querySelector("div.c-container.body")
-          .classList.add("expand");
+        document.querySelector("div.c-container.body").classList.add("expand");
       }, 1000);
     }, 200);
   }

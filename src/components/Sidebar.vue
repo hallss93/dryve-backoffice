@@ -14,14 +14,16 @@
     </div>
     <ul class="o-list">
       <router-link :to="{name:'Home'}">
-        <li class="active">
-          <img src="@/assets/img/ic-home.svg" alt class="o-img" />
+        <li v-bind:class="{active:routeName=='Home'}">
+          <img src="@/assets/img/ic-home_blue.svg" alt class="o-img" v-if="routeName=='Home'" />
+          <img src="@/assets/img/ic-home.svg" alt class="o-img" v-else />
           <p class="o-text text">Início</p>
         </li>
       </router-link>
       <router-link :to="{name:'Clients'}">
-        <li>
-          <img src="@/assets/img/ic-person.svg" alt class="o-img" />
+        <li v-bind:class="{active:routeName=='Clients'}">
+          <img src="@/assets/img/ic-person_blue.svg" alt class="o-img" v-if="routeName=='Clients'" />
+          <img src="@/assets/img/ic-person.svg" alt class="o-img" v-else />
           <p class="o-text text">Clientes</p>
         </li>
       </router-link>
@@ -43,9 +45,9 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "Sidebar",
   props: {
-    msg: String
+    routeName: String
   },
   methods: {
     darkMode() {}
