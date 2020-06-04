@@ -229,18 +229,7 @@ export default {
   },
   components: {
     SimpleCard,
-    LastUpdates,
-  },
-  created() {
-    setTimeout(() => {
-      document.querySelector(".c-navbar").style.top = "0";
-      setTimeout(() => {
-        document.querySelector(".c-sidebar").style.left = "0";
-        document
-          .querySelector("#app > div > div.c-container.body")
-          .classList.add("expand");
-      }, 1000);
-    }, 200);
+    LastUpdates
   }
 };
 </script>
