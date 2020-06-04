@@ -13,14 +13,18 @@
       </div>
     </div>
     <ul class="o-list">
-      <li class="active">
-        <img src="@/assets/img/ic-home.svg" alt class="o-img" />
-        <p class="o-text text">Início</p>
-      </li>
-      <li>
-        <img src="@/assets/img/ic-person.svg" alt class="o-img" />
-        <p class="o-text text">Clientes</p>
-      </li>
+      <router-link :to="{name:'Home'}">
+        <li class="active">
+          <img src="@/assets/img/ic-home.svg" alt class="o-img" />
+          <p class="o-text text">Início</p>
+        </li>
+      </router-link>
+      <router-link :to="{name:'Clients'}">
+        <li>
+          <img src="@/assets/img/ic-person.svg" alt class="o-img" />
+          <p class="o-text text">Clientes</p>
+        </li>
+      </router-link>
       <li>
         <img src="@/assets/img/ic-directions-car.svg" alt class="o-img" />
         <p class="o-text text">Veículos</p>
@@ -62,10 +66,10 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-a {
-  color: #42b983;
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
 }
-
 .c-sidebar {
 }
 </style>

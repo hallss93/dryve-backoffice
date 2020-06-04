@@ -1,0 +1,12 @@
+.o-buttton-filter {
+    border-radius: rem(4);
+    border: 1px solid $black-12;
+    width: rem(106);
+    background: white;
+    display: flex;
+    padding: rem(11);
+
+    img {
+        padding: rem(6);
+    }
+}
