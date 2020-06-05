@@ -43,22 +43,24 @@
         </tr>
         <tr>
           <td colspan="6">
-            <div class="c-container-flex">
-              <p class="o-text steel">Itens por página:</p>
-              <div class="c-container-flex mr-10">
-                <p class="o-text bold ml-10">{{pageSize}}</p>
-                <div class="o-dropdown">
-                  <img src="@/assets/img/ic-arrow-drop-down_silver.svg" class="pointer" alt />
-                  <div class="o-dropdown-content">
-                    <p @click="pageSize=10">10</p>
-                    <p @click="pageSize=20">20</p>
-                    <p @click="pageSize=50">50</p>
+            <div class="c-container-flex justify-content-space-between">
+              <div class="c-container-flex">
+                <p class="o-text steel">Itens por página:</p>
+                <div class="c-container-flex mr-10">
+                  <p class="o-text bold ml-10">{{pageSize}}</p>
+                  <div class="o-dropdown">
+                    <img src="@/assets/img/ic-arrow-drop-down_silver.svg" class="pointer" alt />
+                    <div class="o-dropdown-content">
+                      <p @click="pageSize=10">10</p>
+                      <p @click="pageSize=20">20</p>
+                      <p @click="pageSize=50">50</p>
+                    </div>
                   </div>
                 </div>
+                <p class="o-text steel">1-{{pageSize}} de 3.456</p>
               </div>
-              <p class="o-text steel">1-{{pageSize}} de 3.456</p>
               <div class="c-container-flex">
-                <img src="@/assets/img/ic-chevron-right.svg" alt />
+                <img src="@/assets/img/ic-chevron-right.svg" alt  class="mr-30"/>
                 <img src="@/assets/img/ic-chevron-left.svg" alt />
               </div>
             </div>
