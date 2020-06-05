@@ -52,3 +52,26 @@
     border: 1px solid $black-12;
     border-radius: 4px;
 }
+
+@media only screen and (max-width: 992px) {
+    .c-table-uniform-container {
+        overflow-x: auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .c-table {
+        width: 100%;
+        border-spacing: 0;
+        tbody {
+            .c-table__item {
+                th,
+                td {
+                    div.c-container-flex {
+                        flex-direction: unset;
+                    }
+                }
+            }
+        }
+    }
+}

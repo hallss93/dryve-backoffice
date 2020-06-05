@@ -1,4 +1,5 @@
 .o-container-input {
+    margin-left: rem(10);
     @extend .o-buttton-filter;
     position: relative;
     background: #ddd;
@@ -139,4 +140,10 @@
     padding: rem(16);
     border: 1px solid $black-38;
     background-color: $white-two;
+}
+
+@media only screen and (max-width: 1024px) {
+    .o-container-input {
+        margin: rem(10) rem(0);
+    }
 }

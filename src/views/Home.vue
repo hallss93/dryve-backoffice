@@ -119,7 +119,7 @@
           <div class="pt-15 pb-15 pl-20 pr-20 width-100">
             <p>Top intenções de compra</p>
             <div class="mt-30">
-              <canvas id="myChart" width="auto" height="auto"></canvas>
+              <canvas id="myChart" width="auto" height="auto" max-width="100%"></canvas>
             </div>
           </div>
         </div>

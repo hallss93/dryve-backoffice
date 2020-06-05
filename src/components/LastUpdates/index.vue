@@ -1,5 +1,5 @@
 <template>
-  <div class="c-card no-padding mt-30 width-100 align-items-flex-start">
+  <div class="c-card no-padding mt-30 width-100 align-items-flex-start c-table-uniform-container">
     <div class="c-container-flex inline flex-grow">
       <div class="pt-15 pb-15 pl-20 pr-20 c-container-flex justify-content-space-between">
         <p class="o-text semi-bold">Últimas avaliações</p>
@@ -9,27 +9,27 @@
         </p>
       </div>
       <div>
-        <table class="c-table">
+        <table class="c-table uniform">
           <tbody>
             <tr class="c-table__item">
               <td>
-                <p class="o-text uppercase p-20">
+                <p class="o-text uppercase p-r20">
                   <span class="o-text disabled">Dados do Veículo</span>
                 </p>
               </td>
               <td>
-                <p class="o-text uppercase p-20">
+                <p class="o-text uppercase p-r20">
                   <span class="o-text disabled">Valor</span>
                 </p>
               </td>
               <td>
-                <p class="o-text uppercase p-20">
+                <p class="o-text uppercase p-r20">
                   <span class="o-text disabled">Status</span>
                 </p>
               </td>
             </tr>
             <tr v-for="(item, index) in listCars" :key="index" class="c-table__item">
-              <td class="p-20">
+              <td class="p-2f0">
                 <div class="c-container-flex">
                   <img :src="item.image" width="80" height="60" alt class="o-img classic" />
                   <div class="ml-10">
@@ -44,7 +44,7 @@
                   </div>
                 </div>
               </td>
-              <td class="p-20">
+              <td class="p-2f0">
                 <p class="o-text uppercase steel smaller">Anúncio</p>
                 <p
                   class="o-text bold uppercase dark_blue_grey small"
@@ -54,7 +54,7 @@
                   class="o-text uppercase steel smaller"
                 >R$ {{formatNumber(item.ad_selling_price-4500)}}</p>
               </td>
-              <td class="p-20">
+              <td class="p-2f0">
                 <div class="c-container-flex inline align-items-center">
                   <p class="c-badge o-text steel small">Aguardando precificação</p>
                   <p class="o-text uppercase steel smaller mt-10">18/04/2020 às 14:35</p>

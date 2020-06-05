@@ -14,3 +14,8 @@
         align-items: flex-start;
     }
 }
+@media only screen and (max-width: 1024px) {
+    .c-card {
+        margin-bottom: rem(20);
+    }
+}

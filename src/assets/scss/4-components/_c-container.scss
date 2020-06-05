@@ -85,3 +85,17 @@
     border-bottom-left-radius: 4px;
     background-color: $ice-blue;
 }
+
+@media only screen and (max-width: 1024px) {
+    .c-container-flex {
+        flex-direction: column;
+        &.direction-unique {
+            flex-direction: unset;
+        }
+        &.th3,
+        &.th1,
+        &.medium-with-space {
+            width: auto;
+        }
+    }
+}

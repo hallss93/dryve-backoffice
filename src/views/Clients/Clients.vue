@@ -7,7 +7,7 @@
           <p class="o-text violet uppercase">Filtrar</p>
         </div>
         <div>
-          <div class="o-container-input ml-10">
+          <div class="o-container-input">
             <input type="text" placeholder="Buscar por nome..." />
             <img src="@/assets/img/ic-search.svg" class="input_img" />
           </div>
