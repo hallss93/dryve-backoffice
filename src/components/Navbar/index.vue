@@ -5,8 +5,8 @@
       <p class="o-text uppercase smaller"><span class="disabled">Backoffice</span></p>
     </div>
     <div class="c-navbar-controls c-container-flex align-items-flex-end">
-      <img src="@/assets/img/ic-search.svg" width="24" alt="">
-      <img src="@/assets/img/ic-notifications.svg" width="24" alt="">
+      <img src="@/assets/img/ic-search.svg" width="24" alt="" class="pointer">
+      <img src="@/assets/img/ic-notifications.svg" width="24" alt="" class="pointer">
     </div>
   </div>
 </template>
