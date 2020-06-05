@@ -1,0 +1,32 @@
+.c-tabs {
+    border: 1px solid $black-12;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom: none;
+    margin-top: rem(22);
+    .c-tabs_list {
+        width: 100%;
+        display: flex;
+        .c-tabs__button {
+            @extend .o-text;
+            @extend .uppercase;
+            @extend .black-38;
+            @extend .pointer;
+            flex: 1;
+            display: block;
+            border: none;
+            text-align: center !important;
+            padding: 16px;
+            background-color: $white-two;
+
+            &.active {
+                border-bottom: 2px solid $blue-violet;
+                color: $blue-violet;
+            }
+        }
+    }
+    .c-tabs__tab {
+        background-color: $white-two !important;
+        padding: rem(40);
+    }
+}

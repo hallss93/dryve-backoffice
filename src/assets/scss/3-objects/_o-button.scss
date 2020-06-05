@@ -1,4 +1,6 @@
 .o-button {
+    @extend .pointer;
+    text-align: center;
     display: flex;
     width: rem(130);
     border-radius: rem(4);
@@ -8,6 +10,19 @@
     }
     img {
         padding-right: rem(8);
+    }
+
+    &.simple {
+        display: block;
+        * {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &.clean {
+        background-color: transparent;
+        color: $blue-violet;
     }
 }
 .o-buttton-filter {
@@ -31,9 +46,9 @@
     color: $bright-blue !important;
     padding: rem(7) rem(20);
     margin: 5px;
-    
+
     &.disabled {
-        padding: rem(7) rem(20)!important;
+        padding: rem(7) rem(20) !important;
         background-color: $white-three !important;
         color: $brownish-grey-two !important;
     }

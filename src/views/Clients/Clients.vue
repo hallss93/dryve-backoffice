@@ -23,14 +23,17 @@
       </div>
     </div>
     <TableItens />
+    <FooterDryve />
   </div>
 </template>
 <script>
+import FooterDryve from "@/components/FooterDryve.vue";
 import TableItens from "@/components/Table/index.vue";
 export default {
   name: "Clients",
   components: {
-    TableItens
+    TableItens,
+    FooterDryve
   }
 };
 </script>

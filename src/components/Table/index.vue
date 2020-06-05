@@ -60,7 +60,7 @@
                 <p class="o-text steel">1-{{pageSize}} de 3.456</p>
               </div>
               <div class="c-container-flex">
-                <img src="@/assets/img/ic-chevron-right.svg" alt  class="mr-30"/>
+                <img src="@/assets/img/ic-chevron-right.svg" alt class="mr-30" />
                 <img src="@/assets/img/ic-chevron-left.svg" alt />
               </div>
             </div>

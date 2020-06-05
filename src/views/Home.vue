@@ -125,16 +125,13 @@
         </div>
       </div>
     </div>
-    <div class="c-divider"></div>
-    <div class="c-container-flex justify-content-space-between">
-      <p class="o-text brownish-grey">2020 © Dryve Tecnologia Ltda.</p>
-      <p class="o-text slate-grey small">Versão 1.0.1</p>
-    </div>
+    <FooterDryve />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import FooterDryve from "@/components/FooterDryve.vue";
 import SimpleCard from "@/components/Cards/SimpleCard.vue";
 import LastUpdates from "@/components/LastUpdates/index.vue";
 
@@ -153,7 +150,8 @@ export default {
   },
   components: {
     SimpleCard,
-    LastUpdates
+    LastUpdates,
+    FooterDryve
   },
   async mounted() {
     var ctx = document.getElementById("myChart").getContext("2d");

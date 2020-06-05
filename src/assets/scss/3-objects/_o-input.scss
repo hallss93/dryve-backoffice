@@ -131,3 +131,12 @@
         }
     }
 }
+
+.o-input {
+    width: 100%;
+    opacity: 0.7;
+    border-radius: 4px;
+    padding: rem(16);
+    border: 1px solid $black-38;
+    background-color: $white-two;
+}
