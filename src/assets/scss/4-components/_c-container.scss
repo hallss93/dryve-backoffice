@@ -88,6 +88,7 @@
 
 @media only screen and (max-width: 1024px) {
     .c-container-flex {
+        margin-bottom: rem(15);
         flex-direction: column;
         &.direction-unique {
             flex-direction: unset;
@@ -96,6 +97,24 @@
         &.th1,
         &.medium-with-space {
             width: auto;
+        }
+        &.half {
+            width: 100%;
+            .c-container-flex {
+                &.half {
+                    margin-bottom: rem(15);
+                }
+            }
+
+            &.pl-10 {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .c-container-footer {
+        .c-container-flex {
+            flex-direction: unset;
         }
     }
 }
