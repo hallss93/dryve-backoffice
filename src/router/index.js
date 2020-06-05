@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
@@ -13,9 +12,22 @@ Vue.use(VueRouter)
   {
     path: '/clients',
     name: 'Clients',
-    component: () => import(/* webpackChunkName: "Clients" */ '../views/Clients.vue')
+    component: () => import(/* webpackChunkName: "Clients" */ '../views/Clients/index.vue'),
+    children: [
+      {
+
+        path: '/',
+        name: 'Clients',
+        component: () => import(/* webpackChunkName: "Clients" */ '../views/Clients/Clients.vue'),
+      },
+      {
+        path: 'client/:id',
+        name: 'Client',
+        component: () => import(/* webpackChunkName: "Client" */ '../views/Clients/Client.vue')
+      }
+    ]
   }
-]
+];
 
 const router = new VueRouter({
   mode: 'history',

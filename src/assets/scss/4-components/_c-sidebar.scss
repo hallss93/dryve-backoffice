@@ -13,10 +13,12 @@
         width: 240px;
 
         ul li p.text {
+            display: block;
             opacity: 1;
         }
         ul li.disabled {
             p.text {
+                display: block;
                 opacity: 0.2;
             }
         }
@@ -56,7 +58,8 @@
 
             p.text {
                 opacity: 0;
-                transition: all 0.2s;
+                display: none;
+                transition: opacity 0.2s;
                 padding: 0 rem(10);
                 margin: 0;
                 font-size: rem(16);

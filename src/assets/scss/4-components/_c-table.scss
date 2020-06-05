@@ -9,4 +9,46 @@
             }
         }
     }
+
+    &.uniform {
+        thead {
+            tr {
+                th {
+                    @extend .o-text;
+                    @extend .smaller;
+                    @extend .uppercase;
+                    padding: rem(20);
+                    display: table-cell !important;
+                    text-align: left;
+                    border-bottom: 1px solid $black-12;
+
+                    &.mini {
+                        width: rem(20);
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    @extend .o-text;
+                    @extend .bold;
+                    padding: rem(20);
+                    display: table-cell !important;
+                    text-align: left;
+                    border-bottom: 1px solid $black-12;
+
+                    &.mini {
+                        width: rem(20);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.c-table-uniform-container {
+    background-color: $white-two;
+    border: 1px solid $black-12;
+    border-radius: 4px;
 }

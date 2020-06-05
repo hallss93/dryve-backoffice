@@ -1,12 +1,40 @@
+.o-button {
+    display: flex;
+    width: rem(130);
+    border-radius: rem(4);
+    padding: rem(10);
+    &.bk-violet {
+        background-color: $blue-violet;
+    }
+    img {
+        padding-right: rem(8);
+    }
+}
 .o-buttton-filter {
     border-radius: rem(4);
     border: 1px solid $black-12;
     width: rem(106);
     background: white;
     display: flex;
-    padding: rem(11);
+    padding: rem(10);
 
     img {
-        padding: rem(6);
+        padding: rem(0) rem(5);
+    }
+}
+
+.o-button-radius-color {
+    @extend .o-text;
+    @extend .small;
+    border-radius: 13px;
+    background-color: $ice-blue;
+    color: $bright-blue !important;
+    padding: rem(7) rem(20);
+    margin: 5px;
+    
+    &.disabled {
+        padding: rem(7) rem(20)!important;
+        background-color: $white-three !important;
+        color: $brownish-grey-two !important;
     }
 }

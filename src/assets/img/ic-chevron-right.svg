@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>C8C06680-CDAB-4DDD-A571-DAEEB98450D6</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="7.41 1.41 6 0 0 6 6 12 7.41 10.59 2.83 6"></polygon>
+    </defs>
+    <g id="Listagem" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="[Backoffice---Desktop]-Listagem" transform="translate(-1222.000000, -888.000000)">
+            <g id="ic_chevron_left" transform="translate(1230.000000, 894.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="Colors/Black" mask="url(#mask-2)" fill="#000000">
+                    <g transform="translate(-21.000000, -19.000000)" id="Black">
+                        <rect x="0" y="0" width="50" height="50"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
