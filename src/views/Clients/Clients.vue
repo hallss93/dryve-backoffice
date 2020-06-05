@@ -14,7 +14,7 @@
         </div>
       </div>
       <div>
-        <router-link :to="{ name: 'Client', params: { id: 10 } }">
+        <router-link :to="{ name: 'Client'}">
           <div class="o-button bk-violet pointer">
             <img src="@/assets/img/add.svg" alt width="15" class="mr-5" />
             <p class="o-text uppercase white-two">Adicionar</p>
